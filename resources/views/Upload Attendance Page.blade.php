@@ -112,7 +112,7 @@
             @csrf
             <div class="form-group">
                 <label for="ppt_file">Choose a file to upload:</label>
-                <input type="file" id="ppt_file" name="ppt_file" accept=".ppt,.pptx" required>
+                <input type="file" id="ppt_file" name="ppt_file" accept="csv,xls,xlsx" required>
             </div>
             <button type="submit">Upload</button>
         </form>

@@ -82,25 +82,88 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .comment-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .comment-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #343a40;
+        }
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+        .comment-form button {
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #0056b3;
+        }
+        .comment-list {
+            margin-top: 20px;
+        }
+        .comment-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .comment-item .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .comment-item .comment-text {
+            font-size: 14px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>PPT File Manager</h1>
+        <div>
+            <form method="POST" action="{{ route('logout') }}" class="inline">
+                @csrf
+                <button type="submit" class="text-red-600 dark:text-red-400 hover:underline ml-4">
+                    Logout
+                </button>
+            </form>
+        </div>
     </header>
+
     <div class="container">
         <h2 style="text-align: center; color: #343a40; margin-bottom: 20px;">Manage Your Files</h2>
-        <div class="button-group">
-            <button class="button-blue" onclick="window.location.href='/upload-slide'">Upload Slide</button>
-            <button class="button-blue" onclick="window.location.href='/upload-attendance'">Upload Attendance</button>
-        </div>
         <div class="button-group">
             <button class="button-gray" onclick="window.location.href='/show-slides'">Show Slides</button>
             <button class="button-gray" onclick="window.location.href='/show-attendance'">Show Attendance</button>
         </div>
-    </div>
+        
+        <div class="button-group">
+            <button class="button-blue" onclick="window.location.href='/upload-slide'">Upload Slide</button>
+            <button class="button-blue" onclick="window.location.href='/upload-attendance'">Upload Attendance</button>
+        </div>
+            
+            
+        </div>
+   
+
     <footer>
         <p>&copy; 2024 PPT File Manager. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
+
