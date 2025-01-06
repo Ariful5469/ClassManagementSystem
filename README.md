@@ -1,3 +1,19 @@
+
+3 types of users:
+1)students : they can feedback of the daily classes and access the all slides what are uploaded by teacher and download it.
+2)teacher  : they can upload and download slides
+3)chairman : he can access student's daily class feedback message.
+
+
+although, class routine , teacher details etc found here.
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
